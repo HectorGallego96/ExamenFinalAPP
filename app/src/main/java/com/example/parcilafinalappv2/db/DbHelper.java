@@ -1,3 +1,9 @@
+
+/**
+* clase correspondiente a la creacion de la base de datos y tablas de la base de datso
+*
+* */
+
 package com.example.parcilafinalappv2.db;
 
 import android.content.Context;
@@ -17,15 +23,20 @@ public class DbHelper extends SQLiteOpenHelper {
         super(context, DATABASE_NOMBRE, null, DATABASE_VERSION);
     }
 
+    // metodo para la creacion de la base de datos
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
         sqLiteDatabase.execSQL("CREATE TABLE  " + TABLA_PROGRAMAS + "(" +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                "nombre TEXT NOT NULL)");
+                "nombre TEXT NOT NULL," +
+                "duracion INT NOT NULL," +
+                "modalidad TEXT NOT NULL," +
+                "facultad TEXT NOT NULL)");
 
     }
 
+    // metodo para modificar la base de datos
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 

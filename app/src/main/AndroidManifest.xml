@@ -10,16 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ParcilaFinalAPPv2">
         <activity
-            android:name=".AddActivity"
+            android:name=".Actividades.ViewActivity"
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity">
-            </meta-data>
+                android:value=".Actividades.MainActivity"></meta-data>
+
         </activity>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".Actividades.AddActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Actividades.MainActivity"></meta-data>
+        </activity>
+        <activity
+            android:name=".Actividades.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.ParcilaFinalAPPv2">
             <intent-filter>
@@ -27,6 +34,15 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Actividades.EditActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Actividades.MainActivity">
+            </meta-data>
         </activity>
     </application>
 

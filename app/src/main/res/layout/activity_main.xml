@@ -6,54 +6,41 @@
     android:layout_height="match_parent"
     android:background="@drawable/img"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Actividades.MainActivity">
 
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@color/simil_dorado"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:padding="10dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_weight="1"
+                android:contentDescription="@string/logo_unicartagen"
+                app:srcCompat="@drawable/ic_logo_unicaragena" />
 
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/ic_logo_unicaragena" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="283dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center|center_horizontal|center_vertical"
-                    android:padding="10dp"
-                    android:text="Programas Ofertados"
-                    android:textColor="@color/black"
-                    android:textSize="24sp" />
-            </LinearLayout>
-
-            <ImageButton
-                android:id="@+id/btnAdd"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_gravity="bottom|center|fill_horizontal"
-                android:backgroundTint="@color/cardview_shadow_end_color"
-                android:tooltipText="Agregar"
-                app:srcCompat="@drawable/ic_baseline_add_box_24" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="283dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:padding="10dp"
+                android:text="@string/programas_ofertados"
+                android:textColor="#616161"
+                android:textSize="24sp" />
 
 
         </LinearLayout>

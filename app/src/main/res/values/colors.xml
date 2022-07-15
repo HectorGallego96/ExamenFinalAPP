@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFF</color>
+    <color name="negro">#373435</color>
+    <color name="simil_dorado">#F2AD00</color>
+    <color name="naranja_fuerte">#E46500</color>
+    <color name="sello_agua">#D2D3D5</color>
 </resources>

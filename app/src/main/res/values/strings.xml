@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Unicartagena</string>
+    <string name="txt_nombre_programa">Nombre</string>
+    <string name="txt_duracion_programa">Duración</string>
+    <string name="txt_facultad_programa">Facultad</string>
+    <string name="txt_modalidad_programa">Nombre</string>
+
+    <string name="campo_nombre">Ingrese el Nombre</string>
+    <string name="campo_duracion">Ingrese la Duración</string>
+    <string name="campo_facultad">Ingrese la Facultad</string>
+    <string name="campo_modalidad">Ingrese la Modalidad</string>
+
+    <string name="btn_agregar">Agregar</string>
+    <string name="btn_actualizar">Actualizar</string>
+
+    <string name="modalidad">Modalidad</string>
+    <string name="agregar_programa">Agregar Programa</string>
+    <string name="todo">TODO</string>
+    <string name="programas_ofertados">Programas Ofertados</string>
+    <string name="logo_unicartagen">logo unicartagen</string>
+
+    <string name="gestionar_programas">Gestionar Programas</string>
+
 </resources>
