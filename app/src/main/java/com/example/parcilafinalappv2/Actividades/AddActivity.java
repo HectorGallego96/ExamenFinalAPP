@@ -6,6 +6,7 @@ package com.example.parcilafinalappv2.Actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,7 +35,6 @@ public class AddActivity extends AppCompatActivity {
             agregarPrograma();
         });
 
-
     }
 
     // metodo on la logica para agregar un nuevo programa a la app
@@ -59,6 +59,7 @@ public class AddActivity extends AppCompatActivity {
 
             // llamo al metodo de insertar y le envio los parametros a insertar
             long id = db.insertarPrograma(nombre, duracion, modalidad, facultad);
+
 
             if (id > 0) {
                 Toast.makeText(this, "registro guardado con exito", Toast.LENGTH_SHORT).show();

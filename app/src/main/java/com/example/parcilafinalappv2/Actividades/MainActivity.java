@@ -40,12 +40,17 @@ public class MainActivity extends AppCompatActivity {
 
         adaptador = new ListaProgramaAdaptador(dbController.listarProgramas());
 
-        System.out.println(adaptador);
 
         listaProgramas.setAdapter(adaptador);
 
     }
 
+    // recargo la lista al momento de regresar a la actividad
+    @Override
+    protected void onResume() {
+        super.onResume();
+        listaProgramas.setAdapter(adaptador);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -67,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
 
 
     // metodo para iniciar un la actividad AddActivity correspondiente
